@@ -18,7 +18,8 @@ class TestPlugin {
       let source = compilation.assets['index.html'].source();
       source = source.replace(
         /<\/(.*?)>(.*?)<\/body>$/m,
-        '</$1><script src="./test.js"></script></body>',
+        `</$1><script src="${this.options.filename ||
+          'test.js'}"></script></body>`,
       );
 
       compilation.assets['index.html'] = {

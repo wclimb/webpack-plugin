@@ -15,7 +15,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: 'index.html' }),
     new TestPlugin({
-      filename: 'test.js',
+      filename: 'test1.js',
       template: path.resolve(__dirname, './otherFile/test.js'),
     }),
   ],
