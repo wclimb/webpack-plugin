@@ -1,7 +1,7 @@
 # webpack-plugin
 
-```js
-> npm i 
-> npm run dev
-> npm run build
+```
+> npm i  // 安装
+> npm run dev  // 运行
+> npm run build // 打包
 ```
